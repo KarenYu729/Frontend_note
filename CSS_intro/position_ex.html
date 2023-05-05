@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .background {
+            background-color: whitesmoke;
+        }
+        .back {
+            position: fixed;
+            height: 60px;
+            width: 60px;
+            border: 2px solid sandybrown;
+            right: 10px;
+            bottom: 50px;
+        }
+        .dialog {
+            position: fixed;
+            height: 300px;
+            width: 300px;
+            background-color: lightblue;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            top: 200px;
+            z-index: 100;
+        }
+        /*z-index fix relation for each fixed position (which one should be above)*/
+        .mask {
+            position: fixed;
+            background-color: black;
+            opacity: 70%;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            z-index: 99;
+        }
+
+        .c1{
+            height: 200px;
+            width: 200px;
+            border: 2px solid indianred;
+            margin: 100px;
+            position: relative;
+        }
+        .c1 .c2{
+            height: 50px;
+            width: 50px;
+            background-color: darkseagreen;
+            position: absolute;
+            right: 10px;
+            bottom: 10px;
+        }
+        .c3 {
+            height: 200px;
+            width: 200px;
+            border: 2px solid indianred;
+            margin: 100px;
+        }
+        .c3 .c4 {
+            height: 50px;
+            width: 50px;
+            background-color: darkseagreen;
+        }
+        .link {
+            margin: 0 auto;
+            width: 100px;
+            margin-top: 100px;
+            padding: 20px;
+            padding-left: 65px;
+            background-color: seagreen;
+            position: relative;
+        }
+        .link a {
+          color: burlywood;
+          text-decoration: none;
+        }
+        .link a:hover{
+            color: sandybrown;
+        }
+        .link .show{
+            position: absolute;
+            bottom: -100px;
+            right: 45px;
+            background-color: goldenrod;
+            height: 100px;
+            width: 100px;
+            display: none;
+        }
+        .link:hover .show{
+            display: block;
+        }
+    </style>
+</head>
+<body style="margin: 0">
+<!--    <div class="background">-->
+<!--      <div style="height: 50px; background-color: rosybrown"></div>-->
+<!--      <h1 style="margin: 100px">line</h1>-->
+<!--      <h1 style="margin: 100px">line</h1>-->
+<!--      <h1 style="margin: 100px">line</h1>-->
+<!--      <h1 style="margin: 100px">line</h1>-->
+<!--      <h1 style="margin: 100px">line</h1>-->
+<!--    </div>-->
+<!--    <div class="back"></div>-->
+
+<!--    <div class="mask"></div>-->
+<!--    <div class="dialog">-->
+
+<!--    </div>-->
+<!--    <div class="c1">-->
+<!--        <div class="c2"></div>-->
+<!--        <div class="c2"></div>-->
+<!--        <div class="c2"></div>-->
+<!--        <div class="c2"></div>-->
+<!--    </div>-->
+<!--    <div class="c3">-->
+<!--        <div class="c4"></div>-->
+<!--        <div class="c4"></div>-->
+<!--        <div class="c4"></div>-->
+<!--        <div class="c4"></div>-->
+<!--    </div>-->
+    <div class="link">
+        <a href="#">linkage</a>
+        <div class="show">
+
+        </div>
+    </div>
+</body>
+</html>
