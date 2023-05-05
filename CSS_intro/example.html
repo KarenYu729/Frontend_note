@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+      .header {
+          background-color: darkseagreen;
+      }
+      .header .menu {
+          float: left;
+          color: whitesmoke;
+          height: 38px;
+      }
+      .header .account {
+          float: right;
+          color: antiquewhite;
+          height: 38px;
+      }
+      .header .container .menu a{
+          font-family: source sans pro,sans-serif;
+          display: inline-block;
+          margin-right: 10px;
+          line-height: 40px;
+          text-decoration: none;
+          color: bisque;
+      }
+      .header .container .menu a:hover{
+          color: burlywood;
+      }
+      .header .container .account a{
+          font-family: source sans pro,sans-serif;
+          display: inline-block;
+          margin-right: 10px;
+          line-height: 40px;
+          text-decoration: none;
+          color: whitesmoke;
+      }
+      .header .container .account a:hover{
+          color: lightyellow;
+      }
+      .container{
+          width: 1000px;
+          margin: 0 auto;
+      }
+      .sub_header {
+          background-color: lightyellow;
+      }
+      .sub_header .search{
+          padding-top: 48px;
+          margin-left: 200px;
+      }
+      .sub_header .container .menu_list{
+          float: left;
+      }
+      .sub_header .container .menu_list .left_menu {
+          float: left;
+      }
+      .sub_header .container .menu_list .right_menu {
+          float: right;
+      }
+      .sub_header .container .menu_list .left_menu .logo {
+          float: left;
+      }
+      .sub_header .container .menu_list .left_menu .words {
+          float: right;
+      }
+      .sub_header .container .menu_list .left_menu .logo img{
+          height: 25px;
+          width: 95px;
+          padding-top: 45px;
+          display: inline-block;
+          margin-right: 60px;
+      }
+
+      .sub_header .container .menu_list .left_menu a {
+          font-family: source sans pro,sans-serif;
+          display: inline-block;
+          margin-right: 10px;
+          margin-top: 10px;
+          padding-left: 10px;
+          padding-right: 10px;
+          line-height: 100px;
+          text-decoration: none;
+          color: dimgray;
+      }
+
+      .sub_header .container .menu_list .left_menu a:hover{
+          color: black;
+      }
+
+      .slider .side {
+          height: 533px;
+          width: 20%;
+          background-color: lavender;
+          float: left;
+      }
+      .slider .sd_img img{
+          width: 80%;
+          height: 100%;
+          float: right;
+      }
+
+      .news .container .channel {
+          border: 5px solid skyblue;
+          height: 230px;
+          width: 225px;
+          float: left;
+          margin-top: 10px;
+          margin-right: 30px;
+          background-color: skyblue;
+          opacity: 50%;
+      }
+
+      .news .container .list_birds{
+          height: 230px;
+          width: 225px;
+          float: left;
+          margin-top: 10px;
+          margin-left: 20px;
+      }
+      .news .container .list_birds img{
+          height: 100%;
+          width: 100%;
+      }
+      .news .container .channel .media{
+          float: left;
+          display: inline-block;
+      }
+      .news .container .channel .media img{
+          padding: 20px;
+          height: 30%;
+          width: 30%;
+          opacity: 80%;
+      }
+
+      .news .container .channel .media .line{
+          padding: 20px;
+          height: 70%;
+          width: 70%;
+          opacity: 80%;
+      }
+
+    </style>
+</head>
+<body style="margin: 0">
+    <div class="header">
+        <div class="container">
+            <div class="menu">
+                <a href="https://www.allaboutbirds.org/guide/">Birds</a>
+                <a href="https://www.allaboutbirds.org/cams/">Live Cams</a>
+                <a href="https://academy.allaboutbirds.org/">Courses</a>
+                <a href="##">Birds ID</a>
+            </div>
+            <div class="account">
+                <a href="###">get news</a>
+            </div>
+            <div style="clear: both"></div>
+        </div>
+    </div>
+
+    <div class="sub_header">
+        <div class="container">
+            <div class="menu_list">
+                <div class="left_menu">
+                    <div class="logo">
+                        <img src="https://www.allaboutbirds.org/cams/wp-content/themes/birdpress2/images/cornell-lab-logo.svg">
+                    </div>
+                    <div class="words">
+                        <a href="https://www.allaboutbirds.org/news/get-involved/">Get Involved</a>
+                        <a href="about:blank#blocked">Get eNews</a>
+                        <a href="https://give.birds.cornell.edu/page/87895/donate/1?ea.tracking.id=AAB&__hstc=75100365.57915c370c6ce02f08403a4a9b1406d1.1683151741085.1683258452627.1683295793826.4&__hssc=75100365.1.1683295793826&__hsfp=2117639731&_gl=1*7qbans*_ga*MTA4MzIxNzI4NC4xNjgzMTUxNzQw*_ga_QR4NVXZ8BM*MTY4MzI5NTc5My40LjAuMTY4MzI5NTc5My42MC4wLjA.&_ga=2.171583016.904297476.1683258452-1083217284.1683151740">Donate</a>
+                        <a>Video Highlights</a>
+                    </div>
+                    <div style="clear: both"></div>
+                </div>
+
+            <div class="right_menu">
+                <div class="search">
+                    <input type="text">
+                </div>
+            </div>
+            <div style="clear: both"></div>
+          </div>
+          <div style="clear: both"></div>
+        </div>
+    </div>
+
+    <div class="slider">
+        <div class="container">
+            <div class="side">
+
+            </div>
+            <div class="sd_img">
+                <img src="https://cdn.download.ams.birds.cornell.edu/api/v1/asset/124085511/480">
+            </div>
+            <div style="clear: both"></div>
+        </div>
+    </div>
+
+    <div class="news">
+        <div class="container">
+            <div class="channel">
+                <div class="media">
+                    <img class="line" src="https://www.allaboutbirds.org/cams/wp-content/uploads/2019/08/youtube-logo.png">
+                    <img src="https://www.allaboutbirds.org/cams/wp-content/uploads/2019/08/ig-logo.png">
+                    <img src="https://www.allaboutbirds.org/cams/wp-content/uploads/2019/08/fbook-logo.png">
+                </div>
+                <div style="clear: both"></div>
+            </div>
+
+
+            <div class="list_birds">
+                <img src="https://www.allaboutbirds.org/cams/wp-content/uploads/2019/08/cam-red-tailed-hawks.jpg">
+            </div>
+            <div class="list_birds">
+                <img src="https://www.allaboutbirds.org/cams/wp-content/uploads/2019/12/RoyalCamThumbFeatured.jpg">
+            </div>
+            <div class="list_birds">
+                <img src="https://www.allaboutbirds.org/cams/wp-content/uploads/2019/08/cam-panama-feeders.jpg">
+            </div>
+            <div style="clear: both"></div>
+        </div>
+    </div>
+
+</body>
+</html>
