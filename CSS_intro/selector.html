@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .c1{
+          color: darkred;
+        }
+        #c2{
+          color: darkorange;
+        }
+        li{
+          color: deeppink;
+        }
+        input[type="text"]{
+            border: 2px solid blueviolet;
+        }
+        .c3[asd="234"]{
+          color: cornflowerblue;
+        }
+        .c4 li{
+          color: darkseagreen;
+        }
+        .c5 > a {
+          color: rosybrown;
+        }
+    </style>
+</head>
+<body>
+<!--    select by class-->
+    <h1 class="c1">class select</h1>
+    <h1 class="c1">class select</h1>
+    <h1 class="c1">class select</h1>
+<!--    select by id-->
+    <h1 id="c2">id select</h1>
+<!--    select by label-->
+    <ul>
+        <li>Houston</li>
+        <li>Dallas</li>
+        <li>Austin</li>
+    </ul>
+<!--    select by type-->
+    <div>
+      <input type="text">
+    </div>
+    <div>
+      <input type="password">
+    </div>
+
+    <div class="c3" asd="123">first line</div>
+    <div class="c3" asd="234">second line</div>
+    <div class="c3" asd="345">third line</div>
+
+<!--    select child-->
+<!--    in class c4, find <li></li> in its children & grandchildren-->
+    <div class="c4">
+        <ul>
+          <li>AAAAA</li>
+          <li>BBBBB</li>
+          <li>CCCCC</li>
+        </ul>
+    </div>
+<!--    only looking in son-->
+    <div class="c5">
+      <a>link1</a>
+      <div>
+        <a>link2</a>
+      </div>
+    </div>
+</body>
+</html>
