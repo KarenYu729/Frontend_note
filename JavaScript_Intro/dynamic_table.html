@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div style="margin: 0 auto; width: 1000px">
+    <h2 style="color: #1b6d85; font-weight: bold">Table</h2>
+    <table border="1" style="border: 2px dodgerblue">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Habitat</th>
+            <th>Food</th>
+            <th>Nesting</th>
+        </tr>
+        </thead>
+        <tbody id="body">
+
+        </tbody>
+    </table>
+</div>
+
+<script type="text/javascript">
+    var info_list = [
+        {id: 1, name: "Great Blue Heron", habitat: "Marshes", food: "Fish", nesting: "Tree"},
+        {id: 2, name: "Laughing Gull", habitat: "Shorelines", food: "Aquatic invertebrates", nesting: "Ground"},
+        {id: 3, name: "Sandwich Tern", habitat: "Shorelines", food: "Fish", nesting: "Ground"}
+    ]
+    for (var idx in info_list) {
+        var info = info_list[idx];
+        // var info = {id: 1, name: "Great Blue Heron", habitat: "Marshes", food: "Fish", nesting: "Tree"};
+
+        var tr = document.createElement("tr");
+        for (var key in info) {
+            var text = info[key];
+            var td = document.createElement("td");
+            td.innerText = text;
+            tr.appendChild(td);
+        };
+        var bodyTag = document.getElementById("body");
+        bodyTag.appendChild(tr);
+    }
+
+</script>
+
+</body>
+</html>

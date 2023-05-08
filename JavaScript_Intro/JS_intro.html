@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .menus {
+            width: 200px;
+            border: 2px solid darksalmon;
+        }
+        .menus .header {
+            background-color: #eccccf;
+            padding: 20px 10px;
+        }
+    </style>
+</head>
+<body>
+<!--    <div class="menus">-->
+<!--        <div class="header" onclick="myFunc1()"> This is alert header</div>-->
+<!--        <div class="item"> click header for alert </div>-->
+<!--    </div>-->
+
+<!--    <div class="menus">-->
+<!--        <div class="header" onclick="myFunc2()"> This is confirm header</div>-->
+<!--        <div class="item"> click header for confirm </div>-->
+<!--    </div>-->
+
+
+<!--    <script type="text/javascript">-->
+<!--        function myFunc1() {-->
+<!--            alert("123");-->
+<!--        };-->
+
+<!--        function myFunc2() {-->
+<!--            confirm("345");-->
+<!--        }-->
+<!--    </script>-->
+    <script>
+        var str1 = "This is string1";
+        var str2 = String("This is string2...");
+        var str1Len = str1.length;
+        var str2Len = str2.length;
+
+        console.log(str1, str2)
+        console.log(str1 + "length = " + String(str1Len))
+        console.log(str2 + "length = " + String(str2Len))
+        console.log("str1 and str2 length diff = " + String(str2Len-str1Len))
+        console.log("The first char in str1 is " + str1[0])
+        console.log("The last char in str1 is " + str1[str1Len-1])
+        console.log("The -1 index in str1 is " + str1[-1])
+        console.log("substring in str1[0:5]: " + str1.substr(0,5))
+
+    </script>
+</body>
+</html>

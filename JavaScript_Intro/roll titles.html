@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Roll Title</title>
+    <style>
+        .container {
+            width: 650px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+<h2 class="container" id="roll_txt">
+    Pumas&nbspare&nbsp&nbsplarge,&nbsp&nbspcat-like&nbspanimals&nbspwhich&nbspare&nbspfound&nbspin&nbspAmerica.
+</h2>
+
+<script type="text/javascript">
+    function showRolling() {
+        // get string (all element even h2 label) by id in html
+        var tag = document.getElementById("roll_txt")
+        // console.log(tag)
+        // get text in the string
+        var dataString = tag.innerText
+        // console.log(dataString)
+        // put the first char in the string to the end of the string
+        var firstChar = dataString[0];
+        var leftString = dataString.substr(1, dataString.length);
+        var dataString = leftString + firstChar
+        // console.log("new string: "+dataString)
+        // show new string
+        tag.innerText = dataString;
+    }
+    setInterval(showRolling, 1000);
+</script>
+</body>
+</html>

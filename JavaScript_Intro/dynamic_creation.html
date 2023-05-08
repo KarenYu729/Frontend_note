@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h2> City list </h2>
+    <ul id="city">
+
+    </ul>
+
+    <script type="text/javascript">
+        var cityList = ['Houston', 'Austin', 'Dallas'];
+        for(var idx in cityList){
+            var text = cityList[idx];
+            // create label <li></li>
+            var tag = document.createElement("li");
+            // add text to label
+            tag.innerText = text
+            //find parent label by id
+            var parentTag = document.getElementById("city")
+            // append city to parent label
+            parentTag.appendChild(tag)
+        }
+    </script>
+</body>
+</html>

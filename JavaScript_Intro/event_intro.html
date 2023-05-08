@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h2 style="color: #985f0d"> City list </h2>
+<input type="button" value="show city list" onclick="addCityInfo()">
+<ul id="city">
+
+</ul>
+<h2 style="color: #985f0d"> Add anything you want </h2>
+<input type="text" placeholder="input" id="cus_text">
+<input type="button" value="show custom input" onclick="addText()">
+<ul id="custom">
+
+</ul>
+
+<script type="text/javascript">
+    function addCityInfo() {
+        var cityList = ['Houston', 'Austin', 'Dallas'];
+        for (var idx in cityList) {
+            var text = cityList[idx];
+            // create label <li></li>
+            var tag = document.createElement("li");
+            // add text to label
+            tag.innerText = text;
+            //find parent label by id
+            var parentTag = document.getElementById("city");
+            // append city to parent label
+            parentTag.appendChild(tag);
+        }
+    };
+
+    function addText() {
+        var getString = document.getElementById("cus_text");
+        var text = getString.value;
+        if (text != "") {
+            var tag = document.createElement("li");
+            tag.innerText = text;
+            var parentTag = document.getElementById("custom");
+            parentTag.appendChild(tag);
+            getString.value = '';
+        }
+        else{
+            alert("Can not add empty sting")
+        };
+
+    };
+
+</script>
+</body>
+</html>
