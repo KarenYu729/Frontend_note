@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .container {
+            width: 1000px;
+            margin: 0 auto;
+        }
+        th {
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h2 style="color: darkred; font-weight: bold; text-align: center">Birds message</h2>
+    <table border="1" bordercolor="darkred">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>name</th>
+                <th>Habitat</th>
+                <th>Conservation</th>
+                <th>operation</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>230001</th>
+                <th>Great Blue Heron</th>
+                <th>Marshes</th>
+                <th>Low Concern</th>
+                <th>
+                    <input class="del_button" type="button" value="delete"/>
+                </th>
+            </tr>
+            <tr>
+                <th>230002</th>
+                <th>Laughing Gull</th>
+                <th>Shorelines</th>
+                <th>Low Concern</th>
+                <th>
+                    <input class="del_button" type="button" value="delete"/>
+                </th>
+            </tr>
+            <tr>
+                <th>230003</th>
+                <th>Sandwich Tern</th>
+                <th>Shorelines</th>
+                <th>Low Concern</th>
+                <th>
+                    <input class="del_button" type="button" value="delete"/>
+                </th>
+            </tr>
+        </tbody>
+    </table>
+
+</div>
+
+<script src="static/jquery-3.6.4.min.js"></script>
+<script type="text/javascript">
+    $(".del_button").click(function () {
+        $(this).parent().parent().remove();
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .menu {
+            height: 800px;
+            width: 400px;
+            margin-top: 20px;
+            margin-left: 20px;
+            border: 5px solid seagreen;
+        }
+        .menu .item .header {
+            background-color: cornflowerblue;
+            font-weight: bold;
+            font-size: 25px;
+        }
+        .hide{
+            display: none;
+        }
+        .menu .item .content a {
+            padding: 4px;
+            display: block;
+            border-bottom: 2px dotted lightgray;
+        }
+    </style>
+</head>
+<body>
+<div class="menu">
+    <div class="item">
+        <div class="header" onclick="show(this);">A puma at large</div>
+        <div class="content hide">
+            <a>puma</a>
+            <a>spot</a>
+            <a>evidence</a>
+            <a>accumulate</a>
+            <a>oblige</a>
+            <a>hunt</a>
+        </div>
+    </div>
+    <div class="item">
+        <div class="header" onclick="show(this);">Thirteen equal one</div>
+        <div class="content hide">
+            <a>equal</a>
+            <a>vicar</a>
+            <a>raise</a>
+            <a>torchlight</a>
+        </div>
+    </div>
+    <div class="item">
+        <div class="header" onclick="show(this);">An unknown goddess</div>
+        <div class="content hide">
+            <a>goddess</a>
+            <a>archaeologist</a>
+            <a>explore</a>
+            <a>promontory</a>
+            <a>civilization</a>
+            <a>drainage</a>
+        </div>
+    </div>
+</div>
+    <script src="static/jquery-3.6.4.min.js"></script>
+    <script type="text/javascript">
+        function show(self) {
+            // show self.content
+            $(self).next().removeClass("hide");
+
+            $(self).parent().siblings().find(".content").addClass("hide");
+
+        }
+    </script>
+</body>
+</html>

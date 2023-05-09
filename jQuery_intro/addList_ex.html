@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .container {
+            width: 1000px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+<div class="c">
+    <h2 style="color: darkred; font-weight: bold">User message</h2>
+    <input type="text" placeholder="name" id="UserName" style="display: block; margin-top: 10px" />
+    <input type="text" placeholder="email" id="UserEmail" style="display: block; margin-top: 10px" />
+    <input type="button" value="add" onclick="addUser()"/>
+    <ul id="userInfo">
+
+    </ul>
+
+</div>
+
+<script src="static/jquery-3.6.4.min.js"></script>
+<script type="text/javascript">
+    function addUser() {
+        var name = $("#UserName").val();
+        var email = $("#UserEmail").val();
+        var newStr = name + " " + email
+        // create <li></li>
+        // $("<li>")
+        var newRecord = $("<li>").text(newStr);
+        // add to ul
+        $("#userInfo").append(newRecord);
+
+    }
+</script>
+</body>
+</html>
